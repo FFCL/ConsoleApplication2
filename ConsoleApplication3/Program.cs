@@ -10,12 +10,16 @@ namespace Training
     {
         static void Main(string[] args)
         {
-            string name = "name";
-            int age = 21;
-            char sex = '男';
-            Console.WriteLine("Your name is "+name);
-            Console.WriteLine("Your age is "+age);
-            Console.WriteLine("Your sex is "+sex);
+            #region //两个数值互换
+            /*
+            int a = 10;
+            int b = 5;
+            int c = a;
+            a = b;
+            b = c;
+            Console.WriteLine("Changed is a={0},b={1}",a,b);
+            */
+            #endregion
         }
     }
 }
