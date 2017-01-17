@@ -31,6 +31,7 @@ namespace ConsoleApplication1
             #endregion
 
             #region//字符串的转义(\)
+            /*
             Console.WriteLine("操你妈\n不会MSDN啊！");//换行
             Console.WriteLine("操你妈\t不会MSDN啊！");//tab
             Console.WriteLine("操你妈\b不会MSDN啊！");//删除前面一个字符
@@ -38,6 +39,15 @@ namespace ConsoleApplication1
             string path2 = @"D:\FL Studio 12\Data\Projects\Demo songs\Legacy";//表示路径的第二种方法
             Console.WriteLine(path1);
             Console.WriteLine(path2);
+            */
+            #endregion
+
+            #region//占位符
+            string fuck = "操";
+            string mom = "妈";
+            string horse = "*";
+            Console.WriteLine("{0}你{1}不会MSDN啊！", fuck, mom, horse);
+            Console.WriteLine("{2}你{2}不会MSDN啊！",fuck,mom,horse);
             #endregion
 
         }
