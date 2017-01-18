@@ -5,6 +5,7 @@ namespace Second
     {
         static void Main(string[] args)
         {
+            
             #region//变量声明
             
             int a = 0;//int数值类型可以按F12查询最大值和最小值
@@ -97,16 +98,38 @@ namespace Second
             abe /= 2;//abe = abe / 2
             abe %= 5;//abe = abe % 5
             Console.WriteLine(abe);
-            
+
             #endregion
 
             #region//输入
-            
+            /*
             int maxmoney = 65535;
             Console.WriteLine("Please input your name!");
             string input = Console.ReadLine();//读取用户输入的字符串，赋值与input
             Console.WriteLine("Your name is {0},so i give you {1} 人名币",input,maxmoney);
-            
+            */
+            #endregion
+
+            #region//强制类型转换
+
+            int ai1 = 50;
+            byte ai2 = (byte)ai1;
+            float af = 42.984f;
+            int ai3 = (int)af;
+            int af_round = (int)Math.Round(af);
+            Console.WriteLine("现在有一个\n int ai1 = {0}\n和\n float af = {1}",ai1,af);
+            Console.WriteLine("显式转换结果为byte ai2 = "+ai2+",int ai3 = "+ai3+"←浮点转整数舍弃小数点");
+            Console.WriteLine("使用Math.Round函数后可以四舍五入，所以af_round = "+af_round);
+
+            //parse 针对字符串的转换
+            string string1 = "73.12";//字面量为数字
+            int parse_1 = (int)double.Parse(string1);//整数浮点必须强制转换
+            Console.WriteLine(parse_1);
+
+            //convert 万能转换
+            double convert_double = 50.5;
+            int convert_int = Convert.ToInt32(convert_double);//五舍六入
+            Console.WriteLine("Convert is "+convert_int);
             #endregion
 
         }
